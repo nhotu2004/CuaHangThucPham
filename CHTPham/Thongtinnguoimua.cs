@@ -30,7 +30,7 @@ namespace CHTPham
 
 
             // Lưu thông tin vào file text
-            string filePath = "E:\\db.txt"; // Đường dẫn tới file lưu thông tin
+            string filePath = "D:\\luuAA.txt.txt"; // Đường dẫn tới file lưu thông tin
             using (StreamWriter writer = new StreamWriter(filePath))
             {
                 writer.WriteLine(" " + tennguoinhan);

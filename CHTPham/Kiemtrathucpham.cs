@@ -21,7 +21,7 @@ namespace CHTPham
         private void button1_Click(object sender, EventArgs e)
         {
             // Đường dẫn tới file chứa thông tin
-            string filePath = "E:\\luu.txt";
+            string filePath = "D:\\muaA.txt.txt";
 
             // Kiểm tra sự tồn tại của file
             if (File.Exists(filePath))
@@ -60,7 +60,7 @@ namespace CHTPham
         private void button2_Click(object sender, EventArgs e)
         {
             // Đường dẫn tới file chứa thông tin
-            string filePath = "E:\\db.txt";
+            string filePath = "D:\\luuAA.txt.txt";
 
             // Kiểm tra sự tồn tại của file
             if (File.Exists(filePath))

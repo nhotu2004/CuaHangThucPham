@@ -5523,7 +5523,7 @@ namespace CHTPham
             string luuY = textBox6.Text;
 
             // Lưu thông tin vào file text
-            string filePath = "E:\\luu.txt"; // Đường dẫn tới file lưu thông tin
+            string filePath = "D:\\muaA.txt.txt"; // Đường dẫn tới file lưu thông tin
             using (StreamWriter writer = new StreamWriter(filePath))
             {
                 writer.WriteLine("Tên sản phẩm: " + tenSanPham);
