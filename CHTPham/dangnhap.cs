@@ -32,7 +32,7 @@ namespace CHTPham
         {
             if (sqlcon == null) 
             {
-                sqlcon = new SqlConnection(@"Data Source=LAB1-MAY04\MISASME2022;Initial Catalog=DANGNHAP;Integrated Security=True"); 
+                sqlcon = new SqlConnection(@"Data Source=LAB2-30;Initial Catalog=SQL.HD;Integrated Security=True"); 
             }
             if (sqlcon.State == ConnectionState.Closed)
             {     
@@ -43,7 +43,7 @@ namespace CHTPham
 
             SqlCommand sqlcmd = new SqlCommand();
             sqlcmd.CommandType = CommandType.Text;
-            sqlcmd.CommandText = "SELECT * FROM nguoidungtaikhoan WHERE Nguoidung = '"+ tk +"' AND Matkhaunguoidung = '" + mk + "'";
+            sqlcmd.CommandText = "SELECT * FROM TaikhoanDN WHERE taikhoan = '" + tk +"' AND Matkhau = '" + mk + "'";
 
             sqlcmd.Connection = sqlcon;
 
@@ -51,15 +51,19 @@ namespace CHTPham
             if (data.Read() == true)
             {
                 MessageBox.Show("Đăng Nhập Thành Công");
+                Form2 duongtien = new Form2();
+                duongtien.ShowDialog();
             }
             else
             {
                 MessageBox.Show("Đăng Nhập Thất Bại");
             }
+            data.Close();
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+           
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

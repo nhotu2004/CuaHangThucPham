@@ -5601,5 +5601,10 @@ namespace CHTPham
             textBox7.Text = giaSanPham.ToString();
             textBox6.Text = luuY;
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
